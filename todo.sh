@@ -158,6 +158,12 @@ function main () (
     touch $TODO_FILE_PATH
   fi
 
+  if [ ! "$#" -gt 0 ];
+  then
+    print_usage
+    exit 1
+  fi
+
   local cmd="$1"
   shift 1
   case "$cmd" in
@@ -171,7 +177,7 @@ function main () (
       list_activities "$@"
       ;;
     *)
-      print_usage "$@"
+      print_usage
       ;;
   esac
 )
