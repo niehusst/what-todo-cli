@@ -33,5 +33,5 @@ $ todo.py get -c daily -c learning
 You can setup a symlink to the executable (on unix machines) with the following:
 
 ```
-sudo ln -s ./todo.py /usr/local/bin/
+sudo ln -s /full/path/to/todo.py /usr/local/bin/
 ```
